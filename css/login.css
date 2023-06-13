@@ -11,6 +11,7 @@
 body{
     display: flex;
     width: 100vw;
+    
     height: 100vh;
     background-image: url('../Parallax/resources/1.jpg');
   background-size: cover;
@@ -18,10 +19,11 @@ body{
   /* background-position: center; */
 }
 .container{
-    margin-top: 40px;
+   height: 100vh;
+    
     background-color: rgba(0, 0, 0, 0.6);
     width: 500px;
-    height: 550px;
+   
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
