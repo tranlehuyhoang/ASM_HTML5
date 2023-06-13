@@ -1,0 +1,29 @@
+@media (max-width: 780px) {
+    .hoangtlhps26819 {
+        display: none;
+    }
+
+    .section1 {
+        padding: 10px;
+    }
+
+    .section2 {
+        padding: 10px;
+    }
+
+    .section3 {
+        padding: 10px;
+    }
+
+    .boxchil {
+        display: none;
+    }
+    .section4>div {
+        max-width            : 1200px;
+        margin               : 0 auto;
+        display              : grid;
+        grid-template-columns: 1fr;
+        gap                  : 10px;
+    
+    }
+}

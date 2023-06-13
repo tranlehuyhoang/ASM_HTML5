@@ -1,0 +1,228 @@
+ @font-face {
+     font-family: 'Consolas';
+     src        : url('./CONSOLAB.TTF') format('truetype');
+ }
+
+ html {
+     font-family: 'Consolas', monospace;
+ }
+ 
+
+ body {
+     background-image     : url(../img/anh1lambo.jpg);
+     background-repeat    : no-repeat;
+     cursor               : pointer;
+     font-family          : 'Consolas', monospace;
+     background-attachment: fixed;
+     background-position  : inherit;
+     background-size      : cover;
+     /* transition        : 2s; */
+     max-width            : 100vw;
+     overflow-x           : hidden;
+     height               : 100%;
+ }
+
+ * {
+     padding    : 0px;
+     margin     : 0px;
+     font-family: 'Consolas', monospace;
+     box-sizing : border-box;
+ }
+
+ .header-top {
+     background-color: rgba(0, 0, 0, .5);
+     padding         : 10px;
+     display         : flex;
+     justify-content : space-between;
+     color           : #F6B846;
+     margin-bottom   : 50vw;
+ }
+
+ .header-top a {
+     padding        : 0 5px;
+     color          : #F6B846;
+     text-decoration: none;
+ }
+
+ .section1 {
+     background-color: #222222;
+     list-style      : none;
+     padding         : 50px 0;
+
+ }
+
+ .section1>h1 {
+     align-items: center;
+     font-size  : 8vw;
+     text-align : center;
+     padding    : 50px;
+ }
+
+ .xelambo>ul {
+     list-style: none;
+
+ }
+
+ #muangay {
+     cursor: pointer;
+ }
+
+ .xelambo {
+     list-style: none;
+
+     width        : 385px;
+     text-align   : center;
+     border-bottom: 2px solid black;
+     box-shadow   : 1px 1px 10px #F6B846;
+
+     transition: 0.2s;
+
+ }
+
+ .xelambo>img {
+     width: 100%;
+ }
+
+ .boxcar {
+     align-items    : center;
+     justify-content: center;
+     display        : flex;
+     gap            : 20px;
+     transition     : all 2s;
+     max-width      : 1200px;
+     flex-wrap      : wrap;
+     margin         : 0 auto;
+ }
+
+ .boxcar>div {
+     transition: 10s ease-in-out;
+
+ }
+
+ .buttonmuaxe {
+     display         : block;
+     background-color: black;
+     width           : 100px;
+     align-items     : center;
+     display         : flex;
+     justify-content : center;
+
+ }
+
+ .first img:nth-child(2) {
+     position: absolute;
+     top     : 50px;
+     left    : 50px;
+ }
+
+ .first h1 {
+     position   : absolute;
+     top        : 150px;
+     color      : #F6B846;
+     font-size  : 10vw;
+     text-shadow: black 5px 5px 5px;
+     left       : 50px;
+ }
+
+ .slideshow-container {
+     position: relative;
+ }
+
+ .slideshow-container img {
+     width: 100px;
+ }
+
+ .section2 {
+     width           : 100%;
+     background-color: #222222;
+ }
+
+ .section2>div {
+     max-width: 1200px;
+     margin   : 0 auto;
+ }
+
+ .prev {
+     position : absolute;
+     top      : 50%;
+     font-size: 8vw;
+     z-index  : 99;
+ }
+
+ .next {
+     position : absolute;
+     top      : 50%;
+     right    : 0;
+     font-size: 8vw;
+     z-index  : 99;
+ }
+
+ .section3>div {
+     max-width: 1200px;
+     height   : calc(100vw / 2);
+ }
+
+ .section3 {
+     padding         : 50px 0;
+     background-color: #222222;
+ }
+
+ .section4 {
+     height          : 500px;
+     background-color: rgba(0, 0, 0, .5);
+ }
+
+ .section4>div {
+     max-width            : 1200px;
+     margin               : 0 auto;
+     display              : grid;
+     grid-template-columns: 1fr 2fr;
+     gap                  : 10px;
+
+ }
+
+ .section4>div>div p {
+     padding: 10px 0;
+ }
+
+ .section4>div>div:nth-child(1) {
+
+     color           : #F6B846;
+     background-color: rgba(0, 0, 0, .7);
+ }
+
+ .section4>div>div:nth-child(2) {
+
+     color: #F6B846;
+
+ }
+
+ .grid_box {
+     text-align           : center;
+     display              : grid;
+     grid-template-columns: repeat(3, 1fr);
+ }
+
+ .box2 {
+     text-align    : center;
+     display       : flex;
+     flex-direction: column;
+ }
+
+ .header-top {
+     position        : fixed;
+     width           : 100%;
+     z-index         : 99;
+     background-color: rgba(0, 0, 0, 1);
+     margin-bottom   : 500px;
+ }
+
+ .first {
+     padding-bottom: 50vw;
+ }
+
+ .logooo {
+     position: absolute;
+     top     : 50px;
+     left    : 50px;
+ }

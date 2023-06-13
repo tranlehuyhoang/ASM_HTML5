@@ -1,0 +1,25 @@
+.cursor {
+    position        : fixed;
+    line-height     : 26px;
+    background-color: #F6B846;
+    opacity         : .5;
+    border-radius   : 50%;
+    left            : 0;
+    z-index         : 999;
+    width           : 30px;
+    height          : 30px;
+    top             : 0;
+    pointer-events  : none;
+    transform       : translate(-50%, -50%);
+    transition: all 0.1s ease-out;
+}
+
+.cursor_hover {
+    width : 90px;
+    height: 90px;
+    border: #F6B846 0.01em solid;
+
+    background-color: rgba(255, 255, 255, 0);
+    opacity         : 1;
+
+}

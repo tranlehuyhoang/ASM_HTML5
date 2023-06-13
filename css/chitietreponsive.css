@@ -1,0 +1,14 @@
+@media (max-width: 1000px) {
+    .grid_anh {
+        display              : flex;
+       flex-direction: column;
+    }
+    .chitiet img {
+        width: 100%;
+        
+        height: 100%;
+    }
+    .content{
+        padding: 50px;
+     }
+}

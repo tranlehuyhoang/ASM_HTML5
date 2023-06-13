@@ -1,0 +1,60 @@
+body {
+    background-color: white;
+    background-image: none;
+}
+
+.first_chitiet {
+    margin : 0;
+    padding: 0;
+}
+
+.thanhtoan {
+    width: 100%;
+}
+
+.thanhtoan>div {
+    max-width: 700px;
+    margin   : 0 auto;
+}
+
+.thanhtoan>div>div {
+    align-items: center;
+    
+    text-align : center;
+
+}
+.imaggeee >div{
+    max-width: 700px;
+}
+.imaggeee >div >image{
+    width: 100%;
+}
+.inpusss{
+    margin:50px 0;
+    max-width: 700px;
+    display: flex;
+
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+.inpusss>div{
+    text-align: center;
+
+}
+
+.inpusss input{
+    height: 30px;
+    width: 200px;
+}
+.thanh_toan{
+    width: 100%;
+    padding: 10px 0;
+    border: 0;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    font-size: 3vw;
+}

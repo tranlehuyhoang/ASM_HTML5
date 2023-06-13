@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/chitiet.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/chitietreponsive.css">
+    <link rel="stylesheet" href="./css/cursor.css">
+    <link rel="stylesheet" href="./css/loading.css">
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <div class="svg">
+        <svg version="1.1" id="L6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+            <rect fill="none" stroke="#F6B846" stroke-width="4" x="25" y="25" width="50" height="50">
+                <animateTransform attributeName="transform" dur=".5s" from="0 50 50" to="180 50 50" type="rotate"
+                    id="strokeBox" attributeType="XML" begin="rectBox.end" />
+            </rect>
+            <rect x="27" y="27" fill="#F6B846" width="46" height="50">
+                <animate attributeName="height" dur=".6s" attributeType="XML" from="50" to="0" id="rectBox"
+                    fill="freeze" begin="0s;strokeBox.end" />
+            </rect>
+        </svg>
+    </div>
+    <section class="first first_chitiet " style="margin: 0;">
+        <div class="header-top" style="margin: 0;">
+            <div>
+                <a class="hovervang hoangtlhps26819" href="#">hoangtlhps26819@fpt.edu.vn</a>
+                <a class="hovervang hoangtlhps26819" href="#">10:00 AM To 5:00 PM</a>
+            </div>
+            <div>
+                <button style="  cursor: pointer;" class="google-btn" onclick="signIn()">Đăng nhập bằng Google
+                </button>
+                <a class="iconne" href="#"><ion-icon class="hovervang md hydrated" name="logo-facebook" role="img"
+                        aria-label="logo facebook"></ion-icon></a>
+                <a class="iconne" href="#"><ion-icon class="hovervang md hydrated" name="logo-twitter" role="img"
+                        aria-label="logo twitter"></ion-icon></a>
+                <a class="iconne" href="#"><ion-icon class="hovervang md hydrated" name="logo-instagram" role="img"
+                        aria-label="logo instagram"></ion-icon></a>
+                <a class="iconne" href="#"><ion-icon class="hovervang md hydrated" name="person-circle-outline"
+                        role="img" aria-label="person circle outline"></ion-icon></a>
+                <a class="dangnhapki gachne hovervang" href="./login.html">LOGIN</a>
+                <a class="dangnhapki hovervang" href="./dangki.html">REGISTER</a>
+
+            </div>
+
+        </div>
+        <a href="./indexx.html">
+            <img class="logooo" src="./img/logochinh.png" alt="">
+
+        </a>
+
+    </section>
+    <section style="">
+        <div class="contai_pro" style="padding-bottom: 100px;">
+            <h1>Danh sách sản phẩm</h1>
+            <br>
+            <br>
+            <div class="tablesss">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <td class="text-center">Ảnh </td>
+                            <td class="text-left">Tên sản phẩm</td>
+                            <td class="text-left">Model</td>
+                            <td class="text-left">Số lượng</td>
+                            <td class="text-right">Giá</td>
+                            <td class="text-right">Tổng cộng</td>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+
+
+                    </tbody>
+
+                </table>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="text-right"><strong>Sub-Total:</strong></td>
+                            <td class="text-right">$2,240.00</td>
+                        </tr>
+                        <tr>
+                            <td class="text-right"><strong>Eco Tax (-2.00):</strong></td>
+                            <td class="text-right">$28.00</td>
+                        </tr>
+                        <tr>
+                            <td class="text-right"><strong>VAT (20%):</strong></td>
+                            <td class="text-right">$448.00</td>
+                        </tr>
+                        <tr>
+                            <td class="text-right"><strong>Total:</strong></td>
+                            <td class="text-right">$2,716.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="buttons" style="width: 100%; display: flex; justify-content: space-between; ">
+                <a href="./indexx.html"> <button>
+                        Mua thêm
+                    </button></a>
+                <a href="./thanhtoan.html">
+                    <button>
+                        Thanh toán
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    const products = JSON.parse(localStorage.getItem('cars')) || [];
+    console.log(products)
+    const tbody = document.querySelector('.tbody');
+    products.forEach(product => {
+        const html = `
+    <tr>
+      <td class="text-center"> <a href="./chitiet.html"><img src="./img/anh1lambo.jpg" style="width: 150px;" alt="${product.name}" title="${product.name}" class="img-thumbnail"></a> </td>
+      <td class="text-left"><a href="./chitiet.html">${product.name}</a> <br> <small>weight: 20000</small> <br> <small>Reward Points: 5</small></td>
+      <td class="text-left">${product.name}</td>
+      <td class="text-left">
+        <div class="input-group btn-block" style="max-width: 200px;">
+          <input type="text"   value="1" size="1" class="form-control">
+          <span class="input-group-btn">
+            <button type="submit" data-toggle="tooltip" title="" class="btn btn-primary cartbt" data-original-title="Update"><i class="fa fa-refresh"></i></button>
+            <button type="button" data-toggle="tooltip" title="" class="btn btn-danger"   data-original-title="Remove"><i class="fa fa-times-circle"></i></button>
+          </span>
+        </div>
+      </td>
+      <td class="text-right">$${product.price}</td>
+      <td class="text-right">$${product.price}</td>
+    </tr>
+  `;
+        tbody.innerHTML += html;
+    });
+</script>
+<script>
+    var cursor = document.querySelector('.cursor')
+    var cursor2 = document.querySelector('.cursor2')
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.cssText = cursor2.style.cssText = 'left:' + e.clientX
+            + 'px; top: ' + e.clientY + "px;"
+    })
+    const buttons = document.querySelectorAll('button');
+    const links = document.querySelectorAll('a');
+    const inputs = document.querySelectorAll('input');
+
+    buttons.forEach(button => {
+        button.addEventListener('mouseover', (event) => {
+            const div = document.querySelector('.cursor');
+            div.classList.add('cursor_hover');
+        });
+        button.addEventListener('mouseout', (event) => {
+            const div = document.querySelector('.cursor');
+            div.classList.remove('cursor_hover');
+        });
+    });
+    links.forEach(button => {
+        button.addEventListener('mouseover', (event) => {
+            const div = document.querySelector('.cursor');
+            div.classList.add('cursor_hover');
+        });
+        button.addEventListener('mouseout', (event) => {
+            const div = document.querySelector('.cursor');
+            div.classList.remove('cursor_hover');
+        });
+    });
+    inputs.forEach(button => {
+        button.addEventListener('mouseover', (event) => {
+            const div = document.querySelector('.cursor');
+            div.classList.add('cursor_hover');
+        });
+        button.addEventListener('mouseout', (event) => {
+            const div = document.querySelector('.cursor');
+            div.classList.remove('cursor_hover');
+        });
+    });
+    setTimeout(function () {
+        document.querySelector('.svg').classList.add('hidden');
+
+    }, 2000);
+</script>
+
+</html>

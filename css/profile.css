@@ -1,0 +1,55 @@
+.contai_pro {
+    padding-top: 200px;
+    margin     : 0 auto;
+    max-width  : 1200px;
+
+    height: 1500px;
+}
+
+table {
+    text-align: center;
+    font-size : 30px;
+    width     : 100%;
+}
+
+table,
+tr,
+td {
+
+    border: 1px solid black;
+}
+
+.contai_pro h1 {
+    color: orange;
+}
+
+.tablesss table:nth-child(2) {
+    width          : 40%;
+    margin         : 50px 0;
+    justify-content: end;
+    font-size      : 20px;
+
+}
+
+.buttons {
+    padding: 50px 0;
+}
+
+.buttons button {
+    background-color: orange;
+    border          : 0px;
+    padding         : 20px 100px;
+    color           : white;
+    font-size       : 25px;
+
+    cursor       : pointer;
+    border-radius: 10px;
+}
+
+.tablesss {
+    overflow-x: scroll;
+}
+
+.tablesss table:nth-child(1) {
+    min-width: 1150px;
+}

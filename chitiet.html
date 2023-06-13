@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/chitiet.css">
+    <link rel="stylesheet" href="./css/cursor.css">
+    <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/chitietreponsive.css">
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <div class="svg">
+        <svg version="1.1" id="L6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+            <rect fill="none" stroke="#F6B846" stroke-width="4" x="25" y="25" width="50" height="50">
+                <animateTransform attributeName="transform" dur=".5s" from="0 50 50" to="180 50 50" type="rotate"
+                    id="strokeBox" attributeType="XML" begin="rectBox.end" />
+            </rect>
+            <rect x="27" y="27" fill="#F6B846" width="46" height="50">
+                <animate attributeName="height" dur=".6s" attributeType="XML" from="50" to="0" id="rectBox"
+                    fill="freeze" begin="0s;strokeBox.end" />
+            </rect>
+        </svg>
+    </div>
+    <section class="first first_chitiet " style="margin: 0;">
+        <div class="header-top" style="margin: 0;">
+            <div>
+                <a class="hovervang hoangtlhps26819" href="#">hoangtlhps26819@fpt.edu.vn</a>
+                <a class="hovervang hoangtlhps26819" href="#">10:00 AM To 5:00 PM</a>
+            </div>
+            <div>
+                <button style="  cursor: pointer;" class="google-btn" onclick="signIn()">Đăng nhập bằng Google
+                </button>
+                <a class="iconne" href="#"><ion-icon class="hovervang md hydrated" name="logo-facebook" role="img"
+                        aria-label="logo facebook"></ion-icon></a>
+                <a class="iconne" href="#"><ion-icon class="hovervang md hydrated" name="logo-twitter" role="img"
+                        aria-label="logo twitter"></ion-icon></a>
+                <a class="iconne" href="#"><ion-icon class="hovervang md hydrated" name="logo-instagram" role="img"
+                        aria-label="logo instagram"></ion-icon></a>
+                <a class="iconne" href="#"><ion-icon class="hovervang md hydrated" name="person-circle-outline"
+                        role="img" aria-label="person circle outline"></ion-icon></a>
+                <a class="dangnhapki gachne hovervang" href="./login.html">LOGIN</a>
+                <a class="dangnhapki hovervang" href="./dangki.html">REGISTER</a>
+
+            </div>
+
+        </div>
+        <a href="./indexx.html"> <img class="logooo" src="./img/logochinh.png" alt=""></a>
+
+    </section>
+    <section class="chitiet">
+        <div class="grid_anh">
+            <div class="anhs">
+                <img src="./img/anh1lambo.jpg" alt="" srcset="">
+            </div>
+            <div class="content">
+                <h1 style="margin: 10px 0;">Lamborghini Centenario</h1>
+                <div style="color: orange; margin: 10px 0;">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div style="display: flex; margin: 10px 0; width: 100%; justify-content: space-between;">
+                    <div>GIÁ
+                        <P>$5999.00</P>
+                    </div>
+                    <div>SỐ LƯỢNG <br>
+                        <input type="number" value="1">
+                    </div>
+                </div>
+                <div>
+                    <br>
+                    Động cơ: V12 6.5 lít <br><br>
+                    Công suất cực đại: 770 mã lực <br><br>
+                    Momen xoắn cực đại: 690 Nm <br><br>
+                    Hộp số: 7 cấp độ tự động <br><br>
+                    Tốc độ tối đa: hơn 350 km/h <br><br>
+                    Thời gian tăng tốc từ 0-100 km/h: 2,8 giây <br><br>
+                    Thời gian tăng tốc từ 0-300 km/h: 23,5 giây <br><br>
+                    Hệ thống treo: treo độc lập 4 bánh, khung sườn bằng sợi carbon <br>
+                    Trọng lượng: 1.520 kg <br><br>
+                    Số lượng sản xuất: 40 chiếc (20 chiếc coupe và 20 chiếc roadster) <br><br>
+                </div>
+                <div
+                    style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid black; padding-top: 10px;">
+                    <div>Tổng Giá: <br>
+                        <p>$5999.00</p>
+                    </div>
+                    <button
+                        style="position: relative; right: 0;background-color: orange; border: 0; padding: 10px; border-radius: 10px; cursor: pointer; ">
+                        <a href="./thanhtoan.html" style="text-decoration: none ; color: white;">MUA NGAY</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    var cursor = document.querySelector('.cursor')
+    var cursor2 = document.querySelector('.cursor2')
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.cssText = cursor2.style.cssText = 'left:' + e.clientX
+            + 'px; top: ' + e.clientY + "px;"
+    })
+    const buttons = document.querySelectorAll('button');
+    const links = document.querySelectorAll('a');
+    const inputs = document.querySelectorAll('input');
+
+    buttons.forEach(button => {
+        button.addEventListener('mouseover', (event) => {
+            const div = document.querySelector('.cursor');
+            div.classList.add('cursor_hover');
+        });
+        button.addEventListener('mouseout', (event) => {
+            const div = document.querySelector('.cursor');
+            div.classList.remove('cursor_hover');
+        });
+    });
+    links.forEach(button => {
+        button.addEventListener('mouseover', (event) => {
+            const div = document.querySelector('.cursor');
+            div.classList.add('cursor_hover');
+        });
+        button.addEventListener('mouseout', (event) => {
+            const div = document.querySelector('.cursor');
+            div.classList.remove('cursor_hover');
+        });
+    });
+    inputs.forEach(button => {
+        button.addEventListener('mouseover', (event) => {
+            const div = document.querySelector('.cursor');
+            div.classList.add('cursor_hover');
+        });
+        button.addEventListener('mouseout', (event) => {
+            const div = document.querySelector('.cursor');
+            div.classList.remove('cursor_hover');
+        });
+    });
+    setTimeout(function () {
+        document.querySelector('.svg').classList.add('hidden');
+
+    }, 2000);
+</script>
+
+</html>

@@ -1,0 +1,27 @@
+ body {
+     background-color: white;
+     background-image: none;
+ }
+
+ .chitiet {
+     width           : 100%;
+     height          : auto;
+    
+ }
+
+ .grid_anh {
+     display              : grid;
+     grid-template-columns:  1.5fr 1fr;
+ }
+
+ .chitiet img {
+     width: 100%;
+     
+     height: 100vh;
+ }
+ .content{
+    padding: 100px;
+ }.first{
+    padding-bottom: 0;
+}
+ 

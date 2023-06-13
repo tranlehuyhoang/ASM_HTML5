@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/thanhtoan.css">
+    <link rel="stylesheet" href="./css/cursor.css">
+    <link rel="stylesheet" href="./css/loading.css">
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <div class="svg">
+        <svg version="1.1" id="L6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+            <rect fill="none" stroke="#F6B846" stroke-width="4" x="25" y="25" width="50" height="50">
+                <animateTransform attributeName="transform" dur=".5s" from="0 50 50" to="180 50 50" type="rotate"
+                    id="strokeBox" attributeType="XML" begin="rectBox.end" />
+            </rect>
+            <rect x="27" y="27" fill="#F6B846" width="46" height="50">
+                <animate attributeName="height" dur=".6s" attributeType="XML" from="50" to="0" id="rectBox"
+                    fill="freeze" begin="0s;strokeBox.end" />
+            </rect>
+        </svg>
+    </div>
+    <section class="first first_chitiet " style="margin: 0;">
+        <div class="header-top" style="margin: 0;">
+            <div>
+                <a class="hovervang hoangtlhps26819" href="#">hoangtlhps26819@fpt.edu.vn</a>
+                <a class="hovervang hoangtlhps26819" href="#">10:00 AM To 5:00 PM</a>
+            </div>
+            <div>
+                <button style="  cursor: pointer;" class="google-btn" onclick="signIn()">Đăng nhập bằng Google
+                </button>
+                <a class="iconne" href="#"><ion-icon class="hovervang md hydrated" name="logo-facebook" role="img"
+                        aria-label="logo facebook"></ion-icon></a>
+                <a class="iconne" href="#"><ion-icon class="hovervang md hydrated" name="logo-twitter" role="img"
+                        aria-label="logo twitter"></ion-icon></a>
+                <a class="iconne" href="#"><ion-icon class="hovervang md hydrated" name="logo-instagram" role="img"
+                        aria-label="logo instagram"></ion-icon></a>
+                <a class="iconne" href="#"><ion-icon class="hovervang md hydrated" name="person-circle-outline"
+                        role="img" aria-label="person circle outline"></ion-icon></a>
+                <a class="dangnhapki gachne hovervang" href="./login.html">LOGIN</a>
+                <a class="dangnhapki hovervang" href="./dangki.html">REGISTER</a>
+
+            </div>
+
+        </div>
+        <a href="./indexx.html">
+            <img class="logooo" src="./img/logochinh.png" alt="">
+
+        </a>
+
+    </section>
+    <section class="thanhtoan">
+        <div style="padding: 0 10px;">
+            <div class="imaggeee">
+                <h1 style="padding-top: 90px;">THANH TOÁN</h1>
+                <div>
+                    <img src="https://i.pinimg.com/564x/cb/25/4e/cb254e5bb9a0357ddbf14be4712614fe.jpg" alt=""
+                        width="100%" srcset="">
+                </div>
+            </div>
+            <div class="inputs">
+
+                <div class="inpusss">
+                    <div>
+
+                        <label for="month-input">Số thẻ</label> <br>
+                        <input type="number" id="month-input" name="month">
+                    </div>
+                    <div>
+
+                        <label for="month-input">Số Tiền</label> <br>
+                        <input type="number" id="month-input" name="month">
+                    </div>
+                    <div>
+
+                        <label for="month-input">Chọn tháng:</label> <br>
+                        <input type="month" id="month-input" name="month">
+                    </div>
+                    <div>
+
+                        <label for="year-input">Chọn năm:</label> <br>
+                        <input type="number" id="year-input" name="year" min="1900" max="2099" step="1" value="2021">
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <button class="thanh_toan">Thanh Toán</button>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    var cursor = document.querySelector('.cursor')
+    var cursor2 = document.querySelector('.cursor2')
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.cssText = cursor2.style.cssText = 'left:' + e.clientX
+            + 'px; top: ' + e.clientY + "px;"
+    })
+    const buttons = document.querySelectorAll('button');
+    const links = document.querySelectorAll('input');
+
+    buttons.forEach(button => {
+        button.addEventListener('mouseover', (event) => {
+            const div = document.querySelector('.cursor');
+            div.classList.add('cursor_hover');
+        });
+        button.addEventListener('mouseout', (event) => {
+            const div = document.querySelector('.cursor');
+            div.classList.remove('cursor_hover');
+        });
+    });
+    links.forEach(button => {
+        button.addEventListener('mouseover', (event) => {
+            const div = document.querySelector('.cursor');
+            div.classList.add('cursor_hover');
+        });
+        button.addEventListener('mouseout', (event) => {
+            const div = document.querySelector('.cursor');
+            div.classList.remove('cursor_hover');
+        });
+    });
+    setTimeout(function () {
+        document.querySelector('.svg').classList.add('hidden');
+
+    }, 2000);
+</script>
+
+</html>
